@@ -66,5 +66,3 @@ async def root():
     logger.info("logging from the root logger")
     EchoService.echo("hi")
     return {"status": "alive"}
-
-web: uvicorn main:app --host=0.0.0.0 --port=${PORT:-5000}
