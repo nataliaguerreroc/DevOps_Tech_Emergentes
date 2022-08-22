@@ -67,3 +67,4 @@ async def root():
     EchoService.echo("hi")
     return {"status": "alive"}
 
+web: uvicorn main:app --host=0.0.0.0 --port=${PORT:-5000}
